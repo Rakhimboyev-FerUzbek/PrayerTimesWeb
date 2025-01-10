@@ -2,10 +2,10 @@ namespace PrayerTime.Web.Dtos;
 
 public class Timings
 {
-    public TimeSpan Fajr { get; set; }
-    public TimeSpan Sunrise { get; set; }
-    public TimeSpan Dhuhr { get; set; }
-    public TimeSpan Asr { get; set; }
-    public TimeSpan Maghrib { get; set; }
-    public TimeSpan Isha { get; set; }
+    public string? Fajr { get; set; }
+    public string? Sunrise { get; set; }
+    public string? Dhuhr { get; set; }
+    public string? Asr { get; set; }
+    public string? Maghrib { get; set; }
+    public string? Isha { get; set; }
 }
