@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+<MudThemeProvider>
+    
+</MudThemeProvider>    
+
+<MudLayout>
+    <MudAppBar Color="Color.Primary" Fixed="false">
+        <MudButton Size="Size.Large" Variant="Variant.Filled" StartIcon=@Icons.Material.Outlined.Mosque Color="Color.Info" Style="width:200px"></MudButton>
+        <MudSpacer />
+        <MudButton Variant="Variant.Filled" StartIcon="@Icons.Material.Filled.LocationOn" Color="Color.Error" Style="width:300px">Joylashuv</MudButton>
+    </MudAppBar>
+
+    <MudMainContent>
+        @Body
+    </MudMainContent>
+</MudLayout>
