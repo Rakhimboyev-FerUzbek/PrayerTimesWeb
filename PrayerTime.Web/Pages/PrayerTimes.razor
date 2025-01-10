@@ -5,14 +5,14 @@
 
 @if(data is not null && data.Data is not null && data.Data.Timings is not null && data.Data.Date is not null)
 {    
-    <MudText Style="padding: 5%;" Typo="Typo.h4" Align="Align.Center">Namoz Vaqtlari. @data.Data.Date.Readable!.ToString()</MudText>
+    <MudText Style="padding: 5%;" Typo="Typo.h5" Align="Align.Center">Namoz Vaqtlari. @data.Data.Date.Readable!.ToString()</MudText>
     <MudGrid Style="justify-content: center; align-items: center; width: 100%; padding-left: 10%; padding-right:10% ">
         <MudItem xs = "12" sm="12" md="6" lg="4">
             <MudPaper>
                 <MudCard Style="background-color:antiquewhite width: auto; height: auto; max-width: 100%;">
                     <MudCardContent style="display: flex; justify-content: space-between; padding:6%; ">
-                        <MudText Typo="Typo.h5">Bomdod</MudText>
-                        <MudText Typo="Typo.h5">@data.Data.Timings.Fajr</MudText>
+                        <MudText Typo="Typo.h6">Bomdod</MudText>
+                        <MudText Typo="Typo.h6">@data.Data.Timings.Fajr</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudPaper>
@@ -21,8 +21,8 @@
             <MudPaper>
                 <MudCard Style="width: auto; height: auto; max-width: 100%;">
                     <MudCardContent style="display: flex; justify-content: space-between; padding:6%; ">
-                        <MudText Typo="Typo.h5">Quyosh</MudText>
-                        <MudText Typo="Typo.h5">@data.Data.Timings.Sunrise</MudText>
+                        <MudText Typo="Typo.h6">Quyosh</MudText>
+                        <MudText Typo="Typo.h6">@data.Data.Timings.Sunrise</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudPaper>
@@ -31,8 +31,8 @@
             <MudPaper>
                 <MudCard Style="width: auto; height: auto; max-width: 100%;">
                     <MudCardContent style="display: flex; justify-content: space-between; padding:6%; ">
-                        <MudText Typo="Typo.h5">Peshin</MudText>
-                        <MudText Typo="Typo.h5">@data.Data.Timings.Dhuhr</MudText>
+                        <MudText Typo="Typo.h6">Peshin</MudText>
+                        <MudText Typo="Typo.h6">@data.Data.Timings.Dhuhr</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudPaper>
@@ -41,8 +41,8 @@
             <MudPaper>
                 <MudCard Style="width: auto; height: auto; max-width: 100%;">
                     <MudCardContent style="display: flex; justify-content: space-between; padding:6%; ">
-                        <MudText Typo="Typo.h5">Asr</MudText>
-                        <MudText Typo="Typo.h5">@data.Data.Timings.Asr</MudText>
+                        <MudText Typo="Typo.h6">Asr</MudText>
+                        <MudText Typo="Typo.h6">@data.Data.Timings.Asr</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudPaper>
@@ -51,8 +51,8 @@
             <MudPaper>
                 <MudCard Style="width: auto; height: auto; max-width: 100%;">
                     <MudCardContent style="display: flex; justify-content: space-between; padding:6%; ">
-                        <MudText Typo="Typo.h5">Shom</MudText>
-                        <MudText Typo="Typo.h5">@data.Data.Timings.Maghrib</MudText>
+                        <MudText Typo="Typo.h6">Shom</MudText>
+                        <MudText Typo="Typo.h6">@data.Data.Timings.Maghrib</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudPaper>
@@ -61,8 +61,8 @@
             <MudPaper>
                 <MudCard Style="width: auto; height: auto; max-width: 100%;">
                     <MudCardContent style="display: flex; justify-content: space-between; padding:6%; ">
-                        <MudText Typo="Typo.h5">Xufton</MudText>
-                        <MudText Typo="Typo.h5">@data.Data.Timings.Isha</MudText>
+                        <MudText Typo="Typo.h6">Xufton</MudText>
+                        <MudText Typo="Typo.h6">@data.Data.Timings.Isha</MudText>
                     </MudCardContent>
                 </MudCard>
             </MudPaper>
