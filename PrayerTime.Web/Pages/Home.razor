@@ -1,0 +1,47 @@
+﻿@page "/list"
+<PageTitle>Home</PageTitle>
+
+<MudGrid>
+    <MudItem xs="12">
+        <MudPaper>
+            <MudTable Items="@Datas" Striped="true" Hover="true" Bordered="true">
+                <HeaderContent>
+                    <MudTh class="header-style">Id</MudTh>
+                    <MudTh class="header-style">KitobNomi</MudTh>
+                    <MudTh class="header-style">Avtori</MudTh>
+                    <MudTh class="header-style">Sohasi</MudTh>
+                    <MudTh class="header-style">Link</MudTh>
+                </HeaderContent>
+                <RowTemplate>
+                    <MudTd class="row-style" DataLabel="Id">@context.Id</MudTd>
+                    <MudTd class="row-style" dataLabel="KitobNomi">@context.BookName</MudTd>
+                    <MudTd class="row-style" dataLabel="Avtori">@context.Author</MudTd>
+                    <MudTd class="row-style" dataLabel="Sohasi">@context.FocusArea</MudTd>
+                    <MudTd class="row-style" dataLabel="Link">@context.AmazonLink</MudTd>
+                </RowTemplate>
+            </MudTable>
+        </MudPaper>
+    </MudItem>
+</MudGrid>
+
+<style>
+    .header-style {
+        background-color: #4CAF50; /* Jadval sarlavhalari uchun yashil fon */
+        color: white; /* Sarlavhalar matnining rangi */
+        border-bottom: 2px solid #333; /* Sarlavhalar uchun pastki chiziq */
+    }
+
+    .row-style {
+        background-color: #f2f2f2; /* Jadval qatorlarining fon rangi */
+        color: #333; /* Matn rangi */
+        border-bottom: 1px solid #ccc; /* Qatorlar uchun pastki chegara */
+    }
+
+    .row-style:hover {
+        background-color: #ddd; /* Kursor ustiga kelsa fon rangini o‘zgartirish */
+    }
+
+    .mud-table td, .mud-table th {
+        border: 1px solid #ccc; /* Jadvalning barcha ustunlariga chegaralar qo‘shish */
+    }
+</style>
